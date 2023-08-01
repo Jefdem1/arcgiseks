@@ -6,6 +6,6 @@ provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
 parameters:
   csi.storage.k8s.io/fstype: ext4
-  type: gp2
+  type: gp3
 reclaimPolicy: Delete
 allowVolumeExpansion: true
