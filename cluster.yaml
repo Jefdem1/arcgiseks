@@ -4,10 +4,23 @@ kind: ClusterConfig
 metadata:
   name: arcgis
   region: us-east-1
+  version: '1.25'
+
 
 managedNodeGroups:
   - name: arcgis-mng
+
+#vpc:
+  #subnets:
+    #private:
+    #public:
+      #us-east-1a:
+        #id: "$subnet1"
+      #us-east-1b:
+        #id: "$subnet2"
+
     instanceType: m6a.4xlarge
     minSize: 1
     maxSize: 2
     desiredCapacity: 1
+    #privateNetworking: true
