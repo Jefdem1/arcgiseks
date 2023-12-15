@@ -6,10 +6,6 @@ metadata:
   region: us-east-1
   version: '1.25'
 
-
-managedNodeGroups:
-  - name: arcgis-mng
-
 #vpc:
   #subnets:
     #private:
@@ -19,6 +15,8 @@ managedNodeGroups:
       #us-east-1b:
         #id: "$subnet2"
 
+managedNodeGroups:
+  - name: arcgis-mng
     instanceType: m6a.4xlarge
     minSize: 1
     maxSize: 2
